@@ -2,13 +2,13 @@
 # Service registers under this name
 spring:
   application:
-    name: profiles-microservice-producer
+    name: producer-service
 
 # Discovery Server Access
 eureka:
     client:
       serviceUrl:
-        defaultZone: http://localhost:1111/eureka/
+        defaultZone: http://localhost:8761/eureka/
 
 # HTTP Server (Tomcat) Port
 server: 

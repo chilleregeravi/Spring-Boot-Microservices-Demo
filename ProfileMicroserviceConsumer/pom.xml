@@ -6,9 +6,9 @@
 	<groupId>com.jcombat</groupId>
 	<artifactId>ProfileMicroserviceConsumer</artifactId>
 	<version>1.0.0</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
-	<name>ProfileMicroserviceConsumer</name>
+	<name>consumer-service</name>
 	<description>It is microservice web client server using Spring Boot</description>
 
 	<parent>

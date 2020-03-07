@@ -2,19 +2,36 @@
 # Control the InternalResourceViewResolver:
 spring:
   application:
-    name: profiles-microservice-consumer
+    name: consumer-service
   mvc:
     view:
-      prefix: /WEB-INF/views/
-      suffix: .jsp
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp  
 
 # Discovery Server Access
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:1111/eureka/
+      defaultZone: http://127.0.0.1:8761/eureka/
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5    
 
 # Disable Spring Boot's "Whitelabel" default error page, so we can use our own
 error:
   whitelabel:
     enabled:  false
+
+server:
+  port: 1111
+
+management:
+  security:
+    enabled: false
+
+logging:
+  level:
+    com.example.howtodoinjava: DEBUG
+          
+

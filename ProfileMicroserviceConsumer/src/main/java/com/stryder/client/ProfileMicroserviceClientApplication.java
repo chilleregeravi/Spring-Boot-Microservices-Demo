@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 @EnableDiscoveryClient
 public class ProfileMicroserviceClientApplication {
 	
-	public static final String PROFILES_SERVICE_URL = "http://PROFILES-MICROSERVICE-PRODUCER";
+	public static final String PROFILES_SERVICE_URL = "http://producer-service";
 	
 	public static void main(String[] args) {
 		SpringApplication.run(ProfileMicroserviceClientApplication.class, args);

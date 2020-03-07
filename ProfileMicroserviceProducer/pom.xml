@@ -6,9 +6,9 @@
 	<groupId>com.jcombat</groupId>
 	<artifactId>ProfileMicroserviceProducer</artifactId>
 	<version>1.0.0</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
-	<name>ProfileMicroserviceProducer</name>
+	<name>producer-service</name>
 	<description>It is microservice server of accounts using Spring Boot</description>
 
 	<parent>
