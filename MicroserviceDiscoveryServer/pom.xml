@@ -5,8 +5,8 @@
 
 	<groupId>com.jcombat</groupId>
 	<artifactId>MicroserviceDiscoveryServer</artifactId>
-	<version>1.0.0</version>
-	<packaging>jar</packaging>
+	<!--<version>1.0.0</version>-->
+	<packaging>war</packaging>
 
 	<name>MicroserviceDiscoveryServer</name>
 	<description>Microservice discovery server using Spring Boot</description>
