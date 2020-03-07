@@ -2,11 +2,7 @@
 # Control the InternalResourceViewResolver:
 spring:
   application:
-    name: consumer-service
-  mvc:
-    view:
-      prefix: /WEB-INF/jsp/
-      suffix: .jsp  
+    name: consumer-service 
 
 # Discovery Server Access
 eureka:
