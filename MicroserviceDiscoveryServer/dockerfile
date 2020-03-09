@@ -1,8 +1,8 @@
 FROM openjdk:8-jdk-alpine
 
-ARG JAR_FILE=target/*.jar
+ARG JAR_FILE=target/*.war
 
-COPY ${JAR_FILE} MicroserviceDiscoveryServer.1.5.3.jar
+COPY ${JAR_FILE} MicroserviceDiscoveryServer.1.5.3.war
 
 EXPOSE 8761
 

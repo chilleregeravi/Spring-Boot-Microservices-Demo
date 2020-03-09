@@ -1,0 +1,19 @@
+name: 'buildMicroservices'
+trigger: 
+    - master
+
+pool:
+  vmImage: 'ubuntu-latest'
+  
+jobs:
+  - job: MavenProject
+    displayName: Maven Project
+    steps:
+      - task: Maven@3
+        inputs:
+          mavenPomFile: '$(build.SourcesDirectory)/MicroserviceDiscoveryServer/pom.xml'
+          javaHomeOption: 'JDKVersion'
+          jdkVersionOption: '1.8'
+          jdkArchitectureOption: 'x64'
+          goals: 'package'
+
